@@ -1,0 +1,5 @@
+export function pairConnections(a,b){return a.visual.filter(tag=>b.visual.includes(tag));}
+export function enumerateSets(cards){const result=[];for(let i=0;i<cards.length-2;i++)for(let j=i+1;j<cards.length-1;j++)for(let k=j+1;k<cards.length;k++){const trio=[cards[i],cards[j],cards[k]],tags=pairConnections(trio[0],trio[1]).filter(t=>trio[2].visual.includes(t));if(tags.length)result.push({ids:trio.map(c=>c.id),tags});}return result;}
+export function connectedImages(card,cards){return cards.filter(c=>c.id!==card.id).map(c=>({card:c,tags:pairConnections(card,c)})).filter(c=>c.tags.length).sort((a,b)=>b.tags.length-a.tags.length);}
+// Interleave visual families so the opening page is not variations of one trio.
+export function browseOrder(sets,tagOrder){const buckets=new Map(tagOrder.map(t=>[t,[]]));for(const set of sets)buckets.get(set.tags[0])?.push(set);const result=[];let index=0;while(result.length<sets.length){let added=false;for(const group of buckets.values())if(group[index]){result.push(group[index]);added=true;}if(!added)break;index++;}return result;}

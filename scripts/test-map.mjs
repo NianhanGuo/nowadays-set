@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {SIZE,edgeKey,cleanMap,moveNode,connectNodes,removeNode,removeEdge} from '../dist/map-engine.mjs';
+const original={nodes:[{id:1,x:100,y:100},{id:2,x:300,y:200},{id:3,x:200,y:400}],edges:[]};
+let map=connectNodes(original,1,2);map=connectNodes(map,2,3);assert.equal(map.edges.length,2);assert.equal(original.edges.length,0);
+assert.equal(connectNodes(map,2,1),map);assert.equal(connectNodes(map,1,1),map);assert.equal(connectNodes(map,1,99),map);
+assert.equal(edgeKey(2,1),edgeKey(1,2));
+const moved=moveNode(map,2,-100,99999);assert.deepEqual(moved.nodes[1],{id:2,x:0,y:SIZE.height-SIZE.cardHeight});assert.deepEqual(moved.edges,map.edges);assert.equal(map.nodes[1].x,300);
+assert.equal(removeNode(map,2).edges.length,0);assert.equal(removeNode(map,2).nodes.length,2);assert.equal(removeEdge(map,'1:2').edges.length,1);
+assert.deepEqual(cleanMap(JSON.parse(JSON.stringify(map)),[1,2,3]),map);
+const dirty={nodes:[null,{id:1,x:Infinity,y:0},{id:1,x:-1,y:4},{id:1,x:4,y:5},{id:2,x:3,y:4},{id:99,x:4,y:5}],edges:[null,{a:1,b:1},{a:1,b:99},{a:1,b:2},{a:2,b:1}]};assert.deepEqual(cleanMap(dirty,[1,2]),{nodes:[{id:1,x:0,y:4},{id:2,x:3,y:4}],edges:[{a:1,b:2}]});
+assert.deepEqual(cleanMap(null,[1,2]),{nodes:[],edges:[]});
+console.log('PASS: free connections, duplicates/self-links rejected, immutable movement, edge cleanup, persisted-map restoration, corrupt-state filtering.');

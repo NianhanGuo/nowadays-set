@@ -1,0 +1,431 @@
+{
+  "cards": [
+    {
+      "id": 50458158,
+      "title": "Blue tape frame",
+      "zh": "蓝色胶带框",
+      "image": "assets/50458158.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50458158",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "frames",
+        "crossing"
+      ]
+    },
+    {
+      "id": 50463000,
+      "title": "House through paper",
+      "zh": "纸洞中的房屋",
+      "image": "assets/50463000.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50463000",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "frames"
+      ]
+    },
+    {
+      "id": 50646525,
+      "title": "Red brick facade",
+      "zh": "红砖建筑",
+      "image": "assets/50646525.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50646525",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "upright",
+        "grid"
+      ]
+    },
+    {
+      "id": 50462990,
+      "title": "Facade through paper",
+      "zh": "纸洞中的立面",
+      "image": "assets/50462990.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50462990",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "frames",
+        "grid",
+        "bands"
+      ]
+    },
+    {
+      "id": 50646531,
+      "title": "Architectural model",
+      "zh": "建筑模型",
+      "image": "assets/50646531.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50646531",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "grid"
+      ]
+    },
+    {
+      "id": 50646533,
+      "title": "Wood block tower",
+      "zh": "木块塔",
+      "image": "assets/50646533.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50646533",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "stacked",
+        "upright",
+        "grid"
+      ]
+    },
+    {
+      "id": 50463001,
+      "title": "Steps through paper",
+      "zh": "纸洞中的台阶",
+      "image": "assets/50463001.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50463001",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "frames",
+        "stacked"
+      ]
+    },
+    {
+      "id": 50458155,
+      "title": "Folded paper form",
+      "zh": "折叠纸体",
+      "image": "assets/50458155.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50458155",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "upright"
+      ]
+    },
+    {
+      "id": 50646527,
+      "title": "Ivy on bark",
+      "zh": "树皮上的藤叶",
+      "image": "assets/50646527.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50646527",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "upright"
+      ]
+    },
+    {
+      "id": 50463002,
+      "title": "Trunk through paper",
+      "zh": "纸洞中的树干",
+      "image": "assets/50463002.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50463002",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "frames",
+        "upright"
+      ]
+    },
+    {
+      "id": 50646526,
+      "title": "Spreading tree",
+      "zh": "伸展的大树",
+      "image": "assets/50646526.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50646526",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "branches",
+        "upright"
+      ]
+    },
+    {
+      "id": 50458160,
+      "title": "Branches over a landscape",
+      "zh": "风景上方的枝条",
+      "image": "assets/50458160.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50458160",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "branches",
+        "bands"
+      ]
+    },
+    {
+      "id": 50462991,
+      "title": "Tree through paper",
+      "zh": "纸洞中的树",
+      "image": "assets/50462991.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50462991",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "frames",
+        "branches",
+        "upright"
+      ]
+    },
+    {
+      "id": 50458161,
+      "title": "Painted fields",
+      "zh": "田野风景画",
+      "image": "assets/50458161.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50458161",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "bands"
+      ]
+    },
+    {
+      "id": 50462997,
+      "title": "Plants behind a railing",
+      "zh": "栏杆后的植物",
+      "image": "assets/50462997.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50462997",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "frames",
+        "crossing",
+        "grid"
+      ]
+    },
+    {
+      "id": 50646614,
+      "title": "Scattered spectrum",
+      "zh": "散开的彩光",
+      "image": "assets/50646614.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50646614",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "glow"
+      ]
+    },
+    {
+      "id": 50646617,
+      "title": "Single starburst",
+      "zh": "单个星芒",
+      "image": "assets/50646617.webp",
+      "channels": [
+        "Unexpected"
+      ],
+      "source": "https://www.are.na/block/50646617",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "crossing",
+        "glow"
+      ]
+    },
+    {
+      "id": 50646556,
+      "title": "Branching organic forms",
+      "zh": "分叉有机形态",
+      "image": "assets/50646556.webp",
+      "channels": [
+        "Core",
+        "Dialogue"
+      ],
+      "source": "https://www.are.na/block/50646556",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "branches"
+      ]
+    },
+    {
+      "id": 50646590,
+      "title": "Hanging contour forms",
+      "zh": "悬挂轮廓",
+      "image": "assets/50646590.webp",
+      "channels": [
+        "Core",
+        "Dialogue"
+      ],
+      "source": "https://www.are.na/block/50646590",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "curves"
+      ]
+    },
+    {
+      "id": 50646609,
+      "title": "Wrapped soap stack",
+      "zh": "包装肥皂堆叠",
+      "image": "assets/50646609.webp",
+      "channels": [
+        "Core",
+        "Dialogue"
+      ],
+      "source": "https://www.are.na/block/50646609",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "stacked",
+        "grid",
+        "bands"
+      ]
+    },
+    {
+      "id": 50646605,
+      "title": "Textured ceramic cups",
+      "zh": "纹理陶杯",
+      "image": "assets/50646605.webp",
+      "channels": [
+        "Core",
+        "Dialogue"
+      ],
+      "source": "https://www.are.na/block/50646605",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "stacked",
+        "grid",
+        "bands"
+      ]
+    },
+    {
+      "id": 50646610,
+      "title": "Spiral green bottle",
+      "zh": "螺旋绿瓶",
+      "image": "assets/50646610.webp",
+      "channels": [
+        "Core",
+        "Dialogue"
+      ],
+      "source": "https://www.are.na/block/50646610",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "curves"
+      ]
+    },
+    {
+      "id": 50646616,
+      "title": "Rainbow ring",
+      "zh": "彩虹光环",
+      "image": "assets/50646616.webp",
+      "channels": [
+        "Core",
+        "Dialogue"
+      ],
+      "source": "https://www.are.na/block/50646616",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "curves",
+        "glow"
+      ]
+    },
+    {
+      "id": 50646621,
+      "title": "Crossed light rays",
+      "zh": "交叉光线",
+      "image": "assets/50646621.webp",
+      "channels": [
+        "Core",
+        "Dialogue"
+      ],
+      "source": "https://www.are.na/block/50646621",
+      "collector": "Nianhan Guo",
+      "preview": false,
+      "visual": [
+        "crossing",
+        "glow"
+      ]
+    }
+  ],
+  "tags": {
+    "frames": {
+      "en": "Frames",
+      "zh": "框中框"
+    },
+    "stacked": {
+      "en": "Stacked shapes",
+      "zh": "层叠形状"
+    },
+    "branches": {
+      "en": "Branching lines",
+      "zh": "分叉线条"
+    },
+    "crossing": {
+      "en": "Crossing lines",
+      "zh": "交叉线条"
+    },
+    "upright": {
+      "en": "Upright forms",
+      "zh": "竖立形态"
+    },
+    "curves": {
+      "en": "Nested curves",
+      "zh": "嵌套曲线"
+    },
+    "grid": {
+      "en": "Repeated rectangles",
+      "zh": "重复矩形"
+    },
+    "glow": {
+      "en": "Light on dark",
+      "zh": "暗底亮光"
+    },
+    "bands": {
+      "en": "Horizontal bands",
+      "zh": "横向分层"
+    }
+  },
+  "connectionsVersion": 3
+}

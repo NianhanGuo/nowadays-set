@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {createRegistry,setKey} from '../dist/set-registry.mjs';
+import {setActiveSets,matchTags,sharedTags,findTrio,deal,advance} from '../dist/engine.mjs';
+const {cards}=JSON.parse(fs.readFileSync(new URL('../dist/data.json',import.meta.url))),r=createRegistry(cards),original=r.all()[0],lookup=ids=>ids.map(id=>cards.find(c=>c.id===id));
+assert.equal(r.all().length,130);setActiveSets(r.all());assert.ok(matchTags(lookup(original.ids)).length);
+r.remove(original.key);setActiveSets(r.all());assert.deepEqual(matchTags(lookup([...original.ids].reverse())),[]);assert.equal(findTrio(lookup(original.ids)),null);assert.throws(()=>advance(lookup(original.ids),[],lookup(original.ids)));r.undoRemove(original.key);
+const trio=[cards[0],cards[8],cards[22]];assert.equal(sharedTags(trio).length,0);assert.ok(r.add(trio.map(c=>c.id)));assert.equal(r.add(trio.map(c=>c.id).reverse()),false);assert.equal(r.add([cards[0].id,cards[0].id,cards[1].id]),false);
+const loaded=createRegistry(cards,JSON.parse(JSON.stringify(r.snapshot())));setActiveSets(loaded.all());assert.deepEqual(matchTags(trio),['custom']);assert.ok(findTrio(trio));const d=deal(cards,Math.random,trio.map(c=>c.id));assert.ok(trio.every(c=>d.board.some(b=>b.id===c.id)));const next=advance(d.board,d.remaining,trio);assert.ok(trio.every(c=>![...next.board,...next.remaining].some(b=>b.id===c.id)));
+loaded.remove(setKey(trio.map(c=>c.id)));setActiveSets(loaded.all());assert.deepEqual(matchTags(trio),[]);for(const s of loaded.all())loaded.remove(s.key);setActiveSets(loaded.all());assert.equal(deal(cards).playable,false);assert.equal(findTrio(cards),null);assert.equal(createRegistry(cards,{custom:[null,{ids:[1,2,3]}]}).all().length,130);
+console.log('PASS: custom sets, exact-trio removal, duplicate rejection, save/reload, hints, preferred dealing, advance, empty library.');
